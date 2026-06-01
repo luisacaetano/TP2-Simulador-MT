@@ -1,0 +1,776 @@
+; Programa: Soma de Inteiros Positivos
+; Autor: Luisa Caetano Araujo
+; Entrada: n1 + n2 =
+; Saida: n1 + n2 = resultado
+
+; Bloco principal
+bloco main 1
+    01 copiaNum1 02
+    02 somaDigitos 03
+    03 * -- * i pare
+fim
+
+; Copia n1 para apos o sinal de igual
+bloco copiaNum1 1
+    01 _ -- * d 01
+    01 0 -- X d 10
+    01 1 -- X d 11
+    01 2 -- X d 12
+    01 3 -- X d 13
+    01 4 -- X d 14
+    01 5 -- X d 15
+    01 6 -- X d 16
+    01 7 -- X d 17
+    01 8 -- X d 18
+    01 9 -- X d 19
+    01 + -- * i 50
+
+    ; Escreve 0 e volta
+    10 escreve0 20
+    20 X -- 0 d 01
+
+    ; Escreve 1 e volta
+    11 escreve1 21
+    21 X -- 1 d 01
+
+    ; Escreve 2 e volta
+    12 escreve2 22
+    22 X -- 2 d 01
+
+    ; Escreve 3 e volta
+    13 escreve3 23
+    23 X -- 3 d 01
+
+    ; Escreve 4 e volta
+    14 escreve4 24
+    24 X -- 4 d 01
+
+    ; Escreve 5 e volta
+    15 escreve5 25
+    25 X -- 5 d 01
+
+    ; Escreve 6 e volta
+    16 escreve6 26
+    26 X -- 6 d 01
+
+    ; Escreve 7 e volta
+    17 escreve7 27
+    27 X -- 7 d 01
+
+    ; Escreve 8 e volta
+    18 escreve8 28
+    28 X -- 8 d 01
+
+    ; Escreve 9 e volta
+    19 escreve9 29
+    29 X -- 9 d 01
+
+    ; Terminou n1
+    50 * -- * i retorne
+fim
+
+; Vai ate o resultado e escreve 0
+bloco escreve0 1
+    01 = -- * d 02
+    01 * -- * d 01
+    02 _ -- 0 i 03
+    02 * -- * d 02
+    03 voltaX 04
+    04 * -- * i retorne
+fim
+
+; Vai ate o resultado e escreve 1
+bloco escreve1 1
+    01 = -- * d 02
+    01 * -- * d 01
+    02 _ -- 1 i 03
+    02 * -- * d 02
+    03 voltaX 04
+    04 * -- * i retorne
+fim
+
+; Vai ate o resultado e escreve 2
+bloco escreve2 1
+    01 = -- * d 02
+    01 * -- * d 01
+    02 _ -- 2 i 03
+    02 * -- * d 02
+    03 voltaX 04
+    04 * -- * i retorne
+fim
+
+; Vai ate o resultado e escreve 3
+bloco escreve3 1
+    01 = -- * d 02
+    01 * -- * d 01
+    02 _ -- 3 i 03
+    02 * -- * d 02
+    03 voltaX 04
+    04 * -- * i retorne
+fim
+
+; Vai ate o resultado e escreve 4
+bloco escreve4 1
+    01 = -- * d 02
+    01 * -- * d 01
+    02 _ -- 4 i 03
+    02 * -- * d 02
+    03 voltaX 04
+    04 * -- * i retorne
+fim
+
+; Vai ate o resultado e escreve 5
+bloco escreve5 1
+    01 = -- * d 02
+    01 * -- * d 01
+    02 _ -- 5 i 03
+    02 * -- * d 02
+    03 voltaX 04
+    04 * -- * i retorne
+fim
+
+; Vai ate o resultado e escreve 6
+bloco escreve6 1
+    01 = -- * d 02
+    01 * -- * d 01
+    02 _ -- 6 i 03
+    02 * -- * d 02
+    03 voltaX 04
+    04 * -- * i retorne
+fim
+
+; Vai ate o resultado e escreve 7
+bloco escreve7 1
+    01 = -- * d 02
+    01 * -- * d 01
+    02 _ -- 7 i 03
+    02 * -- * d 02
+    03 voltaX 04
+    04 * -- * i retorne
+fim
+
+; Vai ate o resultado e escreve 8
+bloco escreve8 1
+    01 = -- * d 02
+    01 * -- * d 01
+    02 _ -- 8 i 03
+    02 * -- * d 02
+    03 voltaX 04
+    04 * -- * i retorne
+fim
+
+; Vai ate o resultado e escreve 9
+bloco escreve9 1
+    01 = -- * d 02
+    01 * -- * d 01
+    02 _ -- 9 i 03
+    02 * -- * d 02
+    03 voltaX 04
+    04 * -- * i retorne
+fim
+
+; Volta para a posicao do X em n1
+bloco voltaX 1
+    01 + -- * e 02
+    01 * -- * e 01
+    02 X -- * i retorne
+    02 * -- * e 02
+fim
+
+; Soma digito a digito de n2 ao resultado
+bloco somaDigitos 1
+    ; Posiciona no ultimo digito de n2
+    01 = -- * e 02
+    01 * -- * d 01
+    02 _ -- * e 02
+
+    ; Le digito de n2 e marca
+    02 0 -- A i 10
+    02 1 -- B i 11
+    02 2 -- C i 12
+    02 3 -- D i 13
+    02 4 -- E i 14
+    02 5 -- F i 15
+    02 6 -- G i 16
+    02 7 -- H i 17
+    02 8 -- I i 18
+    02 9 -- J i 19
+    02 + -- * i 50
+    02 A -- * e 02
+    02 B -- * e 02
+    02 C -- * e 02
+    02 D -- * e 02
+    02 E -- * e 02
+    02 F -- * e 02
+    02 G -- * e 02
+    02 H -- * e 02
+    02 I -- * e 02
+    02 J -- * e 02
+
+    ; Digito 0 - nada a fazer
+    10 * -- * i 01
+
+    ; Adiciona o valor correspondente
+    11 somaVal1 01
+    12 somaVal2 01
+    13 somaVal3 01
+    14 somaVal4 01
+    15 somaVal5 01
+    16 somaVal6 01
+    17 somaVal7 01
+    18 somaVal8 01
+    19 somaVal9 01
+
+    ; Restaura n2 e termina
+    50 voltaIni 51
+    51 restauraN2 52
+    52 * -- * i retorne
+fim
+
+; Volta ao inicio da fita
+bloco voltaIni 1
+    01 _ -- * d retorne
+    01 * -- * e 01
+fim
+
+; Adiciona 1 na posicao correspondente
+bloco somaVal1 1
+    01 achaPosRes 02
+    02 soma1 03
+    03 voltaN2pos 04
+    04 * -- * i retorne
+fim
+
+; Adiciona 2 na posicao correspondente
+bloco somaVal2 1
+    01 achaPosRes 02
+    02 soma1 03
+    03 soma1 04
+    04 voltaN2pos 05
+    05 * -- * i retorne
+fim
+
+; Adiciona 3 na posicao correspondente
+bloco somaVal3 1
+    01 achaPosRes 02
+    02 soma1 03
+    03 soma1 04
+    04 soma1 05
+    05 voltaN2pos 06
+    06 * -- * i retorne
+fim
+
+; Adiciona 4 na posicao correspondente
+bloco somaVal4 1
+    01 achaPosRes 02
+    02 soma1 03
+    03 soma1 04
+    04 soma1 05
+    05 soma1 06
+    06 voltaN2pos 07
+    07 * -- * i retorne
+fim
+
+; Adiciona 5 na posicao correspondente
+bloco somaVal5 1
+    01 achaPosRes 02
+    02 soma1 03
+    03 soma1 04
+    04 soma1 05
+    05 soma1 06
+    06 soma1 07
+    07 voltaN2pos 08
+    08 * -- * i retorne
+fim
+
+; Adiciona 6 na posicao correspondente
+bloco somaVal6 1
+    01 achaPosRes 02
+    02 soma1 03
+    03 soma1 04
+    04 soma1 05
+    05 soma1 06
+    06 soma1 07
+    07 soma1 08
+    08 voltaN2pos 09
+    09 * -- * i retorne
+fim
+
+; Adiciona 7 na posicao correspondente
+bloco somaVal7 1
+    01 achaPosRes 02
+    02 soma1 03
+    03 soma1 04
+    04 soma1 05
+    05 soma1 06
+    06 soma1 07
+    07 soma1 08
+    08 soma1 09
+    09 voltaN2pos 10
+    10 * -- * i retorne
+fim
+
+; Adiciona 8 na posicao correspondente
+bloco somaVal8 1
+    01 achaPosRes 02
+    02 soma1 03
+    03 soma1 04
+    04 soma1 05
+    05 soma1 06
+    06 soma1 07
+    07 soma1 08
+    08 soma1 09
+    09 soma1 10
+    10 voltaN2pos 11
+    11 * -- * i retorne
+fim
+
+; Adiciona 9 na posicao correspondente
+bloco somaVal9 1
+    01 achaPosRes 02
+    02 soma1 03
+    03 soma1 04
+    04 soma1 05
+    05 soma1 06
+    06 soma1 07
+    07 soma1 08
+    08 soma1 09
+    09 soma1 10
+    10 soma1 11
+    11 voltaN2pos 12
+    12 * -- * i retorne
+fim
+
+; Acha a posicao correspondente no resultado
+bloco achaPosRes 1
+    ; Conta marcadores a direita ate o =
+    01 A -- A d 02
+    01 B -- B d 02
+    01 C -- C d 02
+    01 D -- D d 02
+    01 E -- E d 02
+    01 F -- F d 02
+    01 G -- G d 02
+    01 H -- H d 02
+    01 I -- I d 02
+    01 J -- J d 02
+    01 _ -- _ d 01
+    01 = -- = d 20
+
+    02 A -- A d 03
+    02 B -- B d 03
+    02 C -- C d 03
+    02 D -- D d 03
+    02 E -- E d 03
+    02 F -- F d 03
+    02 G -- G d 03
+    02 H -- H d 03
+    02 I -- I d 03
+    02 J -- J d 03
+    02 _ -- _ d 02
+    02 = -- = d 21
+
+    03 A -- A d 04
+    03 B -- B d 04
+    03 C -- C d 04
+    03 D -- D d 04
+    03 E -- E d 04
+    03 F -- F d 04
+    03 G -- G d 04
+    03 H -- H d 04
+    03 I -- I d 04
+    03 J -- J d 04
+    03 _ -- _ d 03
+    03 = -- = d 22
+
+    04 * -- * d 04
+    04 = -- = d 23
+
+    ; 0 marcadores - ultimo digito
+    20 _ -- * e retorne
+    20 * -- * d 20
+
+    ; 1 marcador - penultimo
+    21 _ -- * e 31
+    21 * -- * d 21
+    31 _ -- 0 i retorne
+    31 * -- * i retorne
+
+    ; 2 marcadores
+    22 _ -- * e 32
+    22 * -- * d 22
+    32 _ -- 0 e 42
+    32 * -- * e 42
+    42 _ -- 0 i retorne
+    42 * -- * i retorne
+
+    ; 3 marcadores
+    23 _ -- * e 33
+    23 * -- * d 23
+    33 _ -- 0 e 43
+    33 * -- * e 43
+    43 _ -- 0 e 53
+    43 * -- * e 53
+    53 _ -- 0 i retorne
+    53 = -- = d 54
+    53 * -- * i retorne
+
+    ; Precisa criar novo digito apos =
+    54 _ -- 0 i retorne
+    54 * -- * i 55
+    55 insere0 56
+    56 * -- * i retorne
+fim
+
+; Insere 0 no inicio do resultado (move tudo para direita)
+bloco insere0 1
+    ; Memoriza o digito atual e escreve 0
+    01 0 -- 0 d 10
+    01 1 -- 0 d 11
+    01 2 -- 0 d 12
+    01 3 -- 0 d 13
+    01 4 -- 0 d 14
+    01 5 -- 0 d 15
+    01 6 -- 0 d 16
+    01 7 -- 0 d 17
+    01 8 -- 0 d 18
+    01 9 -- 0 d 19
+    01 _ -- 0 e retorne
+
+    ; Propaga: escreve o digito memorizado, memoriza o proximo
+    10 0 -- 0 d 10
+    10 1 -- 0 d 11
+    10 2 -- 0 d 12
+    10 3 -- 0 d 13
+    10 4 -- 0 d 14
+    10 5 -- 0 d 15
+    10 6 -- 0 d 16
+    10 7 -- 0 d 17
+    10 8 -- 0 d 18
+    10 9 -- 0 d 19
+    10 _ -- 0 e 99
+
+    11 0 -- 1 d 10
+    11 1 -- 1 d 11
+    11 2 -- 1 d 12
+    11 3 -- 1 d 13
+    11 4 -- 1 d 14
+    11 5 -- 1 d 15
+    11 6 -- 1 d 16
+    11 7 -- 1 d 17
+    11 8 -- 1 d 18
+    11 9 -- 1 d 19
+    11 _ -- 1 e 99
+
+    12 0 -- 2 d 10
+    12 1 -- 2 d 11
+    12 2 -- 2 d 12
+    12 3 -- 2 d 13
+    12 4 -- 2 d 14
+    12 5 -- 2 d 15
+    12 6 -- 2 d 16
+    12 7 -- 2 d 17
+    12 8 -- 2 d 18
+    12 9 -- 2 d 19
+    12 _ -- 2 e 99
+
+    13 0 -- 3 d 10
+    13 1 -- 3 d 11
+    13 2 -- 3 d 12
+    13 3 -- 3 d 13
+    13 4 -- 3 d 14
+    13 5 -- 3 d 15
+    13 6 -- 3 d 16
+    13 7 -- 3 d 17
+    13 8 -- 3 d 18
+    13 9 -- 3 d 19
+    13 _ -- 3 e 99
+
+    14 0 -- 4 d 10
+    14 1 -- 4 d 11
+    14 2 -- 4 d 12
+    14 3 -- 4 d 13
+    14 4 -- 4 d 14
+    14 5 -- 4 d 15
+    14 6 -- 4 d 16
+    14 7 -- 4 d 17
+    14 8 -- 4 d 18
+    14 9 -- 4 d 19
+    14 _ -- 4 e 99
+
+    15 0 -- 5 d 10
+    15 1 -- 5 d 11
+    15 2 -- 5 d 12
+    15 3 -- 5 d 13
+    15 4 -- 5 d 14
+    15 5 -- 5 d 15
+    15 6 -- 5 d 16
+    15 7 -- 5 d 17
+    15 8 -- 5 d 18
+    15 9 -- 5 d 19
+    15 _ -- 5 e 99
+
+    16 0 -- 6 d 10
+    16 1 -- 6 d 11
+    16 2 -- 6 d 12
+    16 3 -- 6 d 13
+    16 4 -- 6 d 14
+    16 5 -- 6 d 15
+    16 6 -- 6 d 16
+    16 7 -- 6 d 17
+    16 8 -- 6 d 18
+    16 9 -- 6 d 19
+    16 _ -- 6 e 99
+
+    17 0 -- 7 d 10
+    17 1 -- 7 d 11
+    17 2 -- 7 d 12
+    17 3 -- 7 d 13
+    17 4 -- 7 d 14
+    17 5 -- 7 d 15
+    17 6 -- 7 d 16
+    17 7 -- 7 d 17
+    17 8 -- 7 d 18
+    17 9 -- 7 d 19
+    17 _ -- 7 e 99
+
+    18 0 -- 8 d 10
+    18 1 -- 8 d 11
+    18 2 -- 8 d 12
+    18 3 -- 8 d 13
+    18 4 -- 8 d 14
+    18 5 -- 8 d 15
+    18 6 -- 8 d 16
+    18 7 -- 8 d 17
+    18 8 -- 8 d 18
+    18 9 -- 8 d 19
+    18 _ -- 8 e 99
+
+    19 0 -- 9 d 10
+    19 1 -- 9 d 11
+    19 2 -- 9 d 12
+    19 3 -- 9 d 13
+    19 4 -- 9 d 14
+    19 5 -- 9 d 15
+    19 6 -- 9 d 16
+    19 7 -- 9 d 17
+    19 8 -- 9 d 18
+    19 9 -- 9 d 19
+    19 _ -- 9 e 99
+
+    ; Volta para a posicao inserida
+    99 = -- = d retorne
+    99 * -- * e 99
+fim
+
+; Incrementa 1 no digito atual com carry
+bloco soma1 1
+    01 0 -- 1 i retorne
+    01 1 -- 2 i retorne
+    01 2 -- 3 i retorne
+    01 3 -- 4 i retorne
+    01 4 -- 5 i retorne
+    01 5 -- 6 i retorne
+    01 6 -- 7 i retorne
+    01 7 -- 8 i retorne
+    01 8 -- 9 i retorne
+    01 9 -- 0 e 02
+    01 _ -- 1 i retorne
+
+    ; Carry (vai um)
+    02 0 -- 1 i retorne
+    02 1 -- 2 i retorne
+    02 2 -- 3 i retorne
+    02 3 -- 4 i retorne
+    02 4 -- 5 i retorne
+    02 5 -- 6 i retorne
+    02 6 -- 7 i retorne
+    02 7 -- 8 i retorne
+    02 8 -- 9 i retorne
+    02 9 -- 0 e 02
+    02 = -- = d 03
+    02 _ -- 1 i retorne
+
+    ; Overflow - precisa inserir 1 antes do primeiro digito
+    03 insereUm 04
+    04 * -- * i retorne
+fim
+
+; Insere 1 no inicio do resultado
+bloco insereUm 1
+    ; Memoriza o digito atual e escreve 1
+    01 0 -- 1 d 10
+    01 1 -- 1 d 11
+    01 2 -- 1 d 12
+    01 3 -- 1 d 13
+    01 4 -- 1 d 14
+    01 5 -- 1 d 15
+    01 6 -- 1 d 16
+    01 7 -- 1 d 17
+    01 8 -- 1 d 18
+    01 9 -- 1 d 19
+    01 _ -- 1 e retorne
+
+    ; Propaga: escreve o digito memorizado, memoriza o proximo
+    10 0 -- 0 d 10
+    10 1 -- 0 d 11
+    10 2 -- 0 d 12
+    10 3 -- 0 d 13
+    10 4 -- 0 d 14
+    10 5 -- 0 d 15
+    10 6 -- 0 d 16
+    10 7 -- 0 d 17
+    10 8 -- 0 d 18
+    10 9 -- 0 d 19
+    10 _ -- 0 e 99
+
+    11 0 -- 1 d 10
+    11 1 -- 1 d 11
+    11 2 -- 1 d 12
+    11 3 -- 1 d 13
+    11 4 -- 1 d 14
+    11 5 -- 1 d 15
+    11 6 -- 1 d 16
+    11 7 -- 1 d 17
+    11 8 -- 1 d 18
+    11 9 -- 1 d 19
+    11 _ -- 1 e 99
+
+    12 0 -- 2 d 10
+    12 1 -- 2 d 11
+    12 2 -- 2 d 12
+    12 3 -- 2 d 13
+    12 4 -- 2 d 14
+    12 5 -- 2 d 15
+    12 6 -- 2 d 16
+    12 7 -- 2 d 17
+    12 8 -- 2 d 18
+    12 9 -- 2 d 19
+    12 _ -- 2 e 99
+
+    13 0 -- 3 d 10
+    13 1 -- 3 d 11
+    13 2 -- 3 d 12
+    13 3 -- 3 d 13
+    13 4 -- 3 d 14
+    13 5 -- 3 d 15
+    13 6 -- 3 d 16
+    13 7 -- 3 d 17
+    13 8 -- 3 d 18
+    13 9 -- 3 d 19
+    13 _ -- 3 e 99
+
+    14 0 -- 4 d 10
+    14 1 -- 4 d 11
+    14 2 -- 4 d 12
+    14 3 -- 4 d 13
+    14 4 -- 4 d 14
+    14 5 -- 4 d 15
+    14 6 -- 4 d 16
+    14 7 -- 4 d 17
+    14 8 -- 4 d 18
+    14 9 -- 4 d 19
+    14 _ -- 4 e 99
+
+    15 0 -- 5 d 10
+    15 1 -- 5 d 11
+    15 2 -- 5 d 12
+    15 3 -- 5 d 13
+    15 4 -- 5 d 14
+    15 5 -- 5 d 15
+    15 6 -- 5 d 16
+    15 7 -- 5 d 17
+    15 8 -- 5 d 18
+    15 9 -- 5 d 19
+    15 _ -- 5 e 99
+
+    16 0 -- 6 d 10
+    16 1 -- 6 d 11
+    16 2 -- 6 d 12
+    16 3 -- 6 d 13
+    16 4 -- 6 d 14
+    16 5 -- 6 d 15
+    16 6 -- 6 d 16
+    16 7 -- 6 d 17
+    16 8 -- 6 d 18
+    16 9 -- 6 d 19
+    16 _ -- 6 e 99
+
+    17 0 -- 7 d 10
+    17 1 -- 7 d 11
+    17 2 -- 7 d 12
+    17 3 -- 7 d 13
+    17 4 -- 7 d 14
+    17 5 -- 7 d 15
+    17 6 -- 7 d 16
+    17 7 -- 7 d 17
+    17 8 -- 7 d 18
+    17 9 -- 7 d 19
+    17 _ -- 7 e 99
+
+    18 0 -- 8 d 10
+    18 1 -- 8 d 11
+    18 2 -- 8 d 12
+    18 3 -- 8 d 13
+    18 4 -- 8 d 14
+    18 5 -- 8 d 15
+    18 6 -- 8 d 16
+    18 7 -- 8 d 17
+    18 8 -- 8 d 18
+    18 9 -- 8 d 19
+    18 _ -- 8 e 99
+
+    19 0 -- 9 d 10
+    19 1 -- 9 d 11
+    19 2 -- 9 d 12
+    19 3 -- 9 d 13
+    19 4 -- 9 d 14
+    19 5 -- 9 d 15
+    19 6 -- 9 d 16
+    19 7 -- 9 d 17
+    19 8 -- 9 d 18
+    19 9 -- 9 d 19
+    19 _ -- 9 e 99
+
+    ; Volta para a posicao inserida
+    99 = -- = d retorne
+    99 * -- * e 99
+fim
+
+; Volta para a posicao do marcador atual em n2
+bloco voltaN2pos 1
+    01 = -- = e 02
+    01 * -- * e 01
+    02 A -- A i retorne
+    02 B -- B i retorne
+    02 C -- C i retorne
+    02 D -- D i retorne
+    02 E -- E i retorne
+    02 F -- F i retorne
+    02 G -- G i retorne
+    02 H -- H i retorne
+    02 I -- I i retorne
+    02 J -- J i retorne
+    02 * -- * e 02
+fim
+
+; Restaura os digitos de n2
+bloco restauraN2 1
+    ; Primeiro vai ate o +
+    01 + -- * d 02
+    01 * -- * d 01
+
+    ; Agora restaura os marcadores
+    02 A -- 0 d 02
+    02 B -- 1 d 02
+    02 C -- 2 d 02
+    02 D -- 3 d 02
+    02 E -- 4 d 02
+    02 F -- 5 d 02
+    02 G -- 6 d 02
+    02 H -- 7 d 02
+    02 I -- 8 d 02
+    02 J -- 9 d 02
+    02 = -- * i retorne
+    02 _ -- * d 02
+fim
