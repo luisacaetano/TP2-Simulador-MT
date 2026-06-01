@@ -1,0 +1,90 @@
+; Programa: Detector de Palindromos
+; Autor: Luisa Caetano Araujo
+; Entrada: Palavra com letras 'a' e 'b'
+; Saida: SIM (se for palindromo) ou NAO (se nao for)
+
+; Bloco principal
+bloco main 1
+    ; Le primeiro caractere e marca como maiusculo
+    01 a -- A i 10
+    01 b -- B i 20
+    01 _ -- * i 60
+
+    ; Leu 'a' - vai para o fim e verifica
+    10 moveFim 11
+    11 iniEsq 12
+    12 a -- A i 30
+    12 b -- * i 70
+    12 _ -- * i 60
+
+    ; Leu 'b' - vai para o fim e verifica
+    20 moveFim 21
+    21 iniEsq 22
+    22 a -- * i 70
+    22 b -- B i 30
+    22 _ -- * i 60
+
+    ; Continua verificando
+    30 moveIni 31
+    31 iniDir 32
+    32 _ -- * e 60
+    32 * -- * i 01
+
+    ; Palindromo - escreve SIM
+    60 sim pare
+
+    ; Nao palindromo - escreve NAO
+    70 nao pare
+fim
+
+; Move para o ultimo caractere da palavra
+bloco moveFim 1
+    01 _ -- * e retorne
+    01 * -- * d 01
+fim
+
+; Move para o primeiro caractere da palavra
+bloco moveIni 1
+    01 _ -- * d retorne
+    01 * -- * e 01
+fim
+
+; Recua ate caractere minusculo ou branco
+bloco iniEsq 1
+    01 _ -- * i retorne
+    01 a -- * i retorne
+    01 b -- * i retorne
+    01 * -- * e 01
+fim
+
+; Avanca ate caractere minusculo ou branco
+bloco iniDir 1
+    01 _ -- * i retorne
+    01 a -- * i retorne
+    01 b -- * i retorne
+    01 * -- * d 01
+fim
+
+; Palavra eh palindromo - limpa fita e escreve SIM
+bloco sim 1
+    01 moveIni 02
+    02 limpaFita 03
+    03 * -- S d 04
+    04 * -- I d 05
+    05 * -- M d retorne
+fim
+
+; Palavra nao eh palindromo - limpa fita e escreve NAO
+bloco nao 1
+    01 moveIni 02
+    02 limpaFita 03
+    03 * -- N d 04
+    04 * -- A d 05
+    05 * -- O d retorne
+fim
+
+; Limpa toda a fita
+bloco limpaFita 1
+    01 _ -- * i retorne
+    01 * -- _ d 01
+fim
