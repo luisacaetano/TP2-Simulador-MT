@@ -243,183 +243,303 @@ fim
 
 ; Adiciona 2 na posicao correspondente
 bloco somaVal2 1
-    01 achaPosRes 02
-    02 soma1 03
-    03 soma1 04
-    04 voltaN2pos 05
-    05 * -- * i retorne
+    1 achaPosRes 2
+    2 soma1 3
+    3 voltaMarcadorAtual 4
+    4 achaPosRes 5
+    5 soma1 6
+    6 voltaN2pos 7
+    7 * -- * i retorne
 fim
 
 ; Adiciona 3 na posicao correspondente
 bloco somaVal3 1
-    01 achaPosRes 02
-    02 soma1 03
-    03 soma1 04
-    04 soma1 05
-    05 voltaN2pos 06
-    06 * -- * i retorne
+    1 achaPosRes 2
+    2 soma1 3
+    3 voltaMarcadorAtual 4
+    4 achaPosRes 5
+    5 soma1 6
+    6 voltaMarcadorAtual 7
+    7 achaPosRes 8
+    8 soma1 9
+    9 voltaN2pos 10
+    10 * -- * i retorne
 fim
 
 ; Adiciona 4 na posicao correspondente
 bloco somaVal4 1
-    01 achaPosRes 02
-    02 soma1 03
-    03 soma1 04
-    04 soma1 05
-    05 soma1 06
-    06 voltaN2pos 07
-    07 * -- * i retorne
+    1 achaPosRes 2
+    2 soma1 3
+    3 voltaMarcadorAtual 4
+    4 achaPosRes 5
+    5 soma1 6
+    6 voltaMarcadorAtual 7
+    7 achaPosRes 8
+    8 soma1 9
+    9 voltaMarcadorAtual 10
+    10 achaPosRes 11
+    11 soma1 12
+    12 voltaN2pos 13
+    13 * -- * i retorne
 fim
 
 ; Adiciona 5 na posicao correspondente
 bloco somaVal5 1
-    01 achaPosRes 02
-    02 soma1 03
-    03 soma1 04
-    04 soma1 05
-    05 soma1 06
-    06 soma1 07
-    07 voltaN2pos 08
-    08 * -- * i retorne
+    1 achaPosRes 2
+    2 soma1 3
+    3 voltaMarcadorAtual 4
+    4 achaPosRes 5
+    5 soma1 6
+    6 voltaMarcadorAtual 7
+    7 achaPosRes 8
+    8 soma1 9
+    9 voltaMarcadorAtual 10
+    10 achaPosRes 11
+    11 soma1 12
+    12 voltaMarcadorAtual 13
+    13 achaPosRes 14
+    14 soma1 15
+    15 voltaN2pos 16
+    16 * -- * i retorne
 fim
 
 ; Adiciona 6 na posicao correspondente
 bloco somaVal6 1
-    01 achaPosRes 02
-    02 soma1 03
-    03 soma1 04
-    04 soma1 05
-    05 soma1 06
-    06 soma1 07
-    07 soma1 08
-    08 voltaN2pos 09
-    09 * -- * i retorne
+    1 achaPosRes 2
+    2 soma1 3
+    3 voltaMarcadorAtual 4
+    4 achaPosRes 5
+    5 soma1 6
+    6 voltaMarcadorAtual 7
+    7 achaPosRes 8
+    8 soma1 9
+    9 voltaMarcadorAtual 10
+    10 achaPosRes 11
+    11 soma1 12
+    12 voltaMarcadorAtual 13
+    13 achaPosRes 14
+    14 soma1 15
+    15 voltaMarcadorAtual 16
+    16 achaPosRes 17
+    17 soma1 18
+    18 voltaN2pos 19
+    19 * -- * i retorne
 fim
 
 ; Adiciona 7 na posicao correspondente
 bloco somaVal7 1
-    01 achaPosRes 02
-    02 soma1 03
-    03 soma1 04
-    04 soma1 05
-    05 soma1 06
-    06 soma1 07
-    07 soma1 08
-    08 soma1 09
-    09 voltaN2pos 10
-    10 * -- * i retorne
+    1 achaPosRes 2
+    2 soma1 3
+    3 voltaMarcadorAtual 4
+    4 achaPosRes 5
+    5 soma1 6
+    6 voltaMarcadorAtual 7
+    7 achaPosRes 8
+    8 soma1 9
+    9 voltaMarcadorAtual 10
+    10 achaPosRes 11
+    11 soma1 12
+    12 voltaMarcadorAtual 13
+    13 achaPosRes 14
+    14 soma1 15
+    15 voltaMarcadorAtual 16
+    16 achaPosRes 17
+    17 soma1 18
+    18 voltaMarcadorAtual 19
+    19 achaPosRes 20
+    20 soma1 21
+    21 voltaN2pos 22
+    22 * -- * i retorne
 fim
 
 ; Adiciona 8 na posicao correspondente
 bloco somaVal8 1
-    01 achaPosRes 02
-    02 soma1 03
-    03 soma1 04
-    04 soma1 05
-    05 soma1 06
-    06 soma1 07
-    07 soma1 08
-    08 soma1 09
-    09 soma1 10
-    10 voltaN2pos 11
-    11 * -- * i retorne
+    1 achaPosRes 2
+    2 soma1 3
+    3 voltaMarcadorAtual 4
+    4 achaPosRes 5
+    5 soma1 6
+    6 voltaMarcadorAtual 7
+    7 achaPosRes 8
+    8 soma1 9
+    9 voltaMarcadorAtual 10
+    10 achaPosRes 11
+    11 soma1 12
+    12 voltaMarcadorAtual 13
+    13 achaPosRes 14
+    14 soma1 15
+    15 voltaMarcadorAtual 16
+    16 achaPosRes 17
+    17 soma1 18
+    18 voltaMarcadorAtual 19
+    19 achaPosRes 20
+    20 soma1 21
+    21 voltaMarcadorAtual 22
+    22 achaPosRes 23
+    23 soma1 24
+    24 voltaN2pos 25
+    25 * -- * i retorne
 fim
 
 ; Adiciona 9 na posicao correspondente
 bloco somaVal9 1
-    01 achaPosRes 02
-    02 soma1 03
-    03 soma1 04
-    04 soma1 05
-    05 soma1 06
-    06 soma1 07
-    07 soma1 08
-    08 soma1 09
-    09 soma1 10
-    10 soma1 11
-    11 voltaN2pos 12
-    12 * -- * i retorne
+    1 achaPosRes 2
+    2 soma1 3
+    3 voltaMarcadorAtual 4
+    4 achaPosRes 5
+    5 soma1 6
+    6 voltaMarcadorAtual 7
+    7 achaPosRes 8
+    8 soma1 9
+    9 voltaMarcadorAtual 10
+    10 achaPosRes 11
+    11 soma1 12
+    12 voltaMarcadorAtual 13
+    13 achaPosRes 14
+    14 soma1 15
+    15 voltaMarcadorAtual 16
+    16 achaPosRes 17
+    17 soma1 18
+    18 voltaMarcadorAtual 19
+    19 achaPosRes 20
+    20 soma1 21
+    21 voltaMarcadorAtual 22
+    22 achaPosRes 23
+    23 soma1 24
+    24 voltaMarcadorAtual 25
+    25 achaPosRes 26
+    26 soma1 27
+    27 voltaN2pos 28
+    28 * -- * i retorne
 fim
 
-; Acha a posicao correspondente no resultado
+; achaPosRes ROBUSTO: posiciona o cabecote na coluna do resultado
+; correspondente ao digito atual de n2 (k = numero de marcadores),
+; criando zeros a esquerda quando o resultado for curto demais.
+; Usa um cursor (k..t) no resultado e marca temporariamente os
+; marcadores consumidos como minusculos (a..j), restaurando no fim.
 bloco achaPosRes 1
-    ; Conta marcadores a direita ate o =
-    01 A -- A d 02
-    01 B -- B d 02
-    01 C -- C d 02
-    01 D -- D d 02
-    01 E -- E d 02
-    01 F -- F d 02
-    01 G -- G d 02
-    01 H -- H d 02
-    01 I -- I d 02
-    01 J -- J d 02
-    01 _ -- _ d 01
-    01 = -- = d 20
-
-    02 A -- A d 03
-    02 B -- B d 03
-    02 C -- C d 03
-    02 D -- D d 03
-    02 E -- E d 03
-    02 F -- F d 03
-    02 G -- G d 03
-    02 H -- H d 03
-    02 I -- I d 03
-    02 J -- J d 03
-    02 _ -- _ d 02
-    02 = -- = d 21
-
-    03 A -- A d 04
-    03 B -- B d 04
-    03 C -- C d 04
-    03 D -- D d 04
-    03 E -- E d 04
-    03 F -- F d 04
-    03 G -- G d 04
-    03 H -- H d 04
-    03 I -- I d 04
-    03 J -- J d 04
-    03 _ -- _ d 03
-    03 = -- = d 22
-
-    04 * -- * d 04
-    04 = -- = d 23
-
-    ; 0 marcadores - ultimo digito
-    20 _ -- * e retorne
-    20 * -- * d 20
-
-    ; 1 marcador - penultimo
-    21 _ -- * e 31
-    21 * -- * d 21
-    31 _ -- 0 i retorne
-    31 * -- * i retorne
-
-    ; 2 marcadores
-    22 _ -- * e 32
-    22 * -- * d 22
-    32 _ -- 0 e 42
-    32 * -- * e 42
-    42 _ -- 0 i retorne
-    42 * -- * i retorne
-
-    ; 3 marcadores
-    23 _ -- * e 33
-    23 * -- * d 23
-    33 _ -- 0 e 43
-    33 * -- * e 43
-    43 _ -- 0 e 53
-    43 * -- * e 53
-    53 _ -- 0 i retorne
-    53 = -- = d 54
-    53 * -- * i retorne
-
-    ; Precisa criar novo digito apos =
-    54 _ -- 0 i retorne
-    54 * -- * i 55
-    55 insere0 56
-    56 * -- * i retorne
+    1 = -- = d 2
+    1 * -- * d 1
+    2 _ -- * e 3
+    2 * -- * d 2
+    3 0 -- k i 4
+    3 1 -- l i 4
+    3 2 -- m i 4
+    3 3 -- n i 4
+    3 4 -- o i 4
+    3 5 -- p i 4
+    3 6 -- q i 4
+    3 7 -- r i 4
+    3 8 -- s i 4
+    3 9 -- t i 4
+    4 = -- = i 5
+    4 * -- * e 4
+    5 = -- = e 6
+    6 A -- a i 10
+    6 B -- b i 10
+    6 C -- c i 10
+    6 D -- d i 10
+    6 E -- e i 10
+    6 F -- f i 10
+    6 G -- g i 10
+    6 H -- h i 10
+    6 I -- i i 10
+    6 J -- j i 10
+    6 a -- * e 6
+    6 b -- * e 6
+    6 c -- * e 6
+    6 d -- * e 6
+    6 e -- * e 6
+    6 f -- * e 6
+    6 g -- * e 6
+    6 h -- * e 6
+    6 i -- * e 6
+    6 j -- * e 6
+    6 * -- * i 40
+    10 a -- * e 10
+    10 b -- * e 10
+    10 c -- * e 10
+    10 d -- * e 10
+    10 e -- * e 10
+    10 f -- * e 10
+    10 g -- * e 10
+    10 h -- * e 10
+    10 i -- * e 10
+    10 j -- * e 10
+    10 A -- A i 11
+    10 B -- B i 11
+    10 C -- C i 11
+    10 D -- D i 11
+    10 E -- E i 11
+    10 F -- F i 11
+    10 G -- G i 11
+    10 H -- H i 11
+    10 I -- I i 11
+    10 J -- J i 11
+    10 * -- * i 40
+    11 A -- a i 12
+    11 B -- b i 12
+    11 C -- c i 12
+    11 D -- d i 12
+    11 E -- e i 12
+    11 F -- f i 12
+    11 G -- g i 12
+    11 H -- h i 12
+    11 I -- i i 12
+    11 J -- j i 12
+    12 = -- = d 13
+    12 * -- * d 12
+    13 k -- 0 e 14
+    13 l -- 1 e 14
+    13 m -- 2 e 14
+    13 n -- 3 e 14
+    13 o -- 4 e 14
+    13 p -- 5 e 14
+    13 q -- 6 e 14
+    13 r -- 7 e 14
+    13 s -- 8 e 14
+    13 t -- 9 e 14
+    13 * -- * d 13
+    14 0 -- k i 15
+    14 1 -- l i 15
+    14 2 -- m i 15
+    14 3 -- n i 15
+    14 4 -- o i 15
+    14 5 -- p i 15
+    14 6 -- q i 15
+    14 7 -- r i 15
+    14 8 -- s i 15
+    14 9 -- t i 15
+    14 = -- = d 90
+    90 insere0 91
+    91 0 -- k i 15
+    15 = -- = e 10
+    15 * -- * e 15
+    40 a -- A d 40
+    40 b -- B d 40
+    40 c -- C d 40
+    40 d -- D d 40
+    40 e -- E d 40
+    40 f -- F d 40
+    40 g -- G d 40
+    40 h -- H d 40
+    40 i -- I d 40
+    40 j -- J d 40
+    40 = -- = i 42
+    40 * -- * d 40
+    42 = -- = d 43
+    43 k -- 0 i retorne
+    43 l -- 1 i retorne
+    43 m -- 2 i retorne
+    43 n -- 3 i retorne
+    43 o -- 4 i retorne
+    43 p -- 5 i retorne
+    43 q -- 6 i retorne
+    43 r -- 7 i retorne
+    43 s -- 8 i retorne
+    43 t -- 9 i retorne
+    43 * -- * d 43
 fim
 
 ; Insere 0 no inicio do resultado (move tudo para direita)
@@ -752,6 +872,24 @@ bloco voltaN2pos 1
     02 I -- I i retorne
     02 J -- J i retorne
     02 * -- * e 02
+fim
+
+; Volta ao marcador atual (mais a esquerda) de n2 para re-ancorar a coluna
+bloco voltaMarcadorAtual 1
+    01 = -- = e 02
+    01 * -- * e 01
+    02 A -- * e 02
+    02 B -- * e 02
+    02 C -- * e 02
+    02 D -- * e 02
+    02 E -- * e 02
+    02 F -- * e 02
+    02 G -- * e 02
+    02 H -- * e 02
+    02 I -- * e 02
+    02 J -- * e 02
+    02 * -- * d 03
+    03 * -- * i retorne
 fim
 
 ; Restaura os digitos de n2
